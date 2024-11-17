@@ -1,0 +1,243 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_inicio.css" />
+    <link rel="stylesheet" href="responsivo.css">
+    <script
+      src="https://kit.fontawesome.com/2abcf7511c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav1">
+        <a href="#seccion_inicio">
+          <img
+            src="Recursos/IMG/minecraft-icon.png"
+            width="200vw"
+            height="55vh"
+          />
+        </a>
+      </div>
+      <div class="nav2">
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fas fa-tablet-alt"></i>
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <div class="nav3">
+        <ul>
+          <li><a href="#seccion_inicio">Inicio</a></li>
+          <li><a href="#seccion_novedades">Novedades</a></li>
+          <li><a href="#seccion_comentarios">Comentarios</a></li>
+          <li><a href="#seccion_contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="seccion_inicio">
+      <video autoplay muted loop>
+        <source
+          src="Recursos/VIDEOS/video1.mp4"
+          type="video/mp4"
+          class="videoFondo"
+        />
+      </video>
+      <div class="CONTENIDO_INICIO">
+        <div class="CONTENIDO_SUP">
+          
+        </div>
+        <div class="CONTENIDO_INF">
+          <div id="cont1">
+            <h2 class="h2Inicio">Una gran comunidad te espera!</h2>
+            <p class="pInicio">
+              Puedes jugar con amigos con la nueva implementacion del
+              multijugador, nunca te aburrirás!
+            </p>
+          </div>
+          <div id="cont2">
+            <h2 class="h2Inicio">Disponible en varias plataformas!</h2>
+            <p class="pInicio">Nintendo Switch</p>
+            <p class="pInicio">Nintendo 3DS</p>
+            <p class="pInicio">Windows</p>
+            <p class="pInicio">Linux</p>
+            <p class="pInicio">PlayStation 5</p>
+            <p class="pInicio">Xbox Series X</p>
+          </div>
+          <div id="cont3">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              >Ya tenes una cuenta? Haz click aqui!</a
+            >
+          </div>
+          <div id="cont4">
+            <h2 class="h2Inicio">Esto está de relleno! No se que mas poner</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion_novedades">
+      <div class="CONTENIDO_NOVEDADES">
+        <div class="BUSCADOR">
+          <div class="busca">
+            <input
+              type="text"
+              class="entrada"
+              placeholder="Busqueda de novedades..."
+            />
+            <button class="busqueda">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="COLUMNAS">
+          <div class="cont4" id="cont-izq">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">VISITAS EXCLUSIVAS</h2>
+            <p class="pFuncion" id="noticiaVisita">
+              ¡Pasate por las oficinas de Mojang Studios desde el 15 hasta el 22
+              de noviembre para tener una chance de ganar un tour por las
+              oficinas donde los desarrolladores viven!
+            </p>
+          </div>
+          <div class="cont4">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">SE VA UN CAMPEÓN</h2>
+            <p class="pFuncion" id="noticiaCampeon">
+              Recientemente, Willyrex anunció que se retirará de su trabajo como
+              youtuber, lo honraremos con una nueva capa disponible ya para Java
+              y Bedrock
+            </p>
+          </div>
+
+          <div class="cont4">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">UNA NUEVA HISTORIA</h2>
+            <p class="pFuncion" id="noticiaHistoria">
+              ¡Estamos orgullosos de anunciar la secuela del aclamado Minecraft:
+              Story Mode! Minecraft Story Mode 2 estará disponible en mayo de
+              2025
+            </p>
+          </div>
+
+          <div class="cont4">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">ARREGLAMOS BEDROCK</h2>
+            <p class="pFuncion" id="noticiaBedrock">
+              La nueva versión de Minecraft: Bedrock Edition arregla bugs que
+              causaban que los jugadores les diera un paro cardiaco durante el
+              juego.
+            </p>
+          </div>
+          <div class="cont4">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">OBSIDIAN CUP</h2>
+            <p class="pFuncion" id="noticiaCopa">
+              ¡8 equipos competirán el próximo lunes en una serie de minijuegos
+              para ganar la Obisidian Cup!
+            </p>
+          </div>
+          <div class="cont4">
+            <h2 class="h2Funcion" onclick="abrirNovedad(event)">NUEVA ACTUALIZACIÓN</h2>
+            <p class="pFuncion" id="noticiaActualizacion">
+              La versión 1.22 trae carpinchos, dulce de leche y el arbol de
+              banana... ¡Con una nueva madera verde!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion_comentarios">
+      <div class="CONTENIDO_COMENTARIOS">
+        <div class="comentario">
+          <div class="icono">
+            <img src="/Recursos/IMG/cuscus.jpg" alt="Perfil-1" />
+          </div>
+          <div class="contenido">
+            <h3>@Coscuuu:</h3>
+            <p>Mi nuevo juego favorito</p>
+          </div>
+        </div>
+        <div class="comentario">
+          <div class="icono">
+            <img src="/Recursos/IMG/double tonka.jpg" alt="" />
+          </div>
+          <div class="contenido">
+            <h3>@DoubleTonka:</h3>
+            <p>Ella es una tonka tiene el Minecraft en el cuarto</p>
+          </div>
+        </div>
+        <div class="comentario">
+          <div class="icono">
+            <img src="/Recursos/IMG/tangalanga.jpg" alt="" />
+          </div>
+          <div class="contenido">
+            <h3>@Dr. Tangalanga:</h3>
+            <p>
+              Es un juego muy divertido, mi hijo y yo lo jugamos hace años, nos
+              encanta. 10/10
+            </p>
+          </div>
+        </div>
+        <div class="comentario">
+          <div class="icono">
+            <img src="Recursos/IMG/titocalderon.jpg" alt="" />
+          </div>
+          <div class="contenido">
+            <h3>@Tito Calderon:</h3>
+            <p>Un saludo a Ethan</p>
+          </div>
+        </div>
+        <div class="comentario">
+          <div class="icono">
+            <img src="Recursos/IMG/vegetta777.jpg" alt="" />
+          </div>
+          <div class="contenido">
+            <h3>@Vegetta777:</h3>
+            <p>El juego esta wapisimo chaval, madre mia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccion_contacto">
+      <div class="CONTENIDO_CONTACTO">
+        <div class="mapaGoogle">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!3m2!1ses!2suy!4v1731496047490!5m2!1ses!2suy!6m8!1m7!1sIrgjRACfDN0K5IXlxehAgw!2m2!1d59.32064349246576!2d18.05152370571674!3f4.235264031702172!4f33.786065549950095!5f0.7820865974627469"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="columnaDatos">
+          <div id="formulario2">
+            <form action="" id="form1">
+              <label>
+                <input type="text" placeholder="Nombre" />
+                <input type="text" placeholder="Apellido" />
+              </label>
+
+              <input class="InputInf" type="text" placeholder="Telefono" />
+              <input class="InputInf" type="email" placeholder="Email" />
+              <button class="piedra">
+               Ingresar
+              </button>
+            </form>
+          </div>
+
+          <div class="datosContacto">
+            <ul class="lista_2">
+              <i class="fa-solid fa-location-dot"></i>
+              &nbsp; &nbsp; Direccion
+              <li class="li_texto">Direccion de las oficinas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

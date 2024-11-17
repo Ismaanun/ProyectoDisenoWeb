@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "roboto";
+  src: url(/Recursos/FUENTES/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "minecraftia";
+  src: url(/Recursos/FUENTES/Minecraftia/Minecraftia-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "minecraftia";
+  overflow: hidden;
+  text-align: center;
+  font-size: smaller;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  background: url(/Recursos/IMG/minecraftDiv3.png) no-repeat;
+  background-size: 100%;
+}
+
+.nav1,
+.nav2,
+.nav3 {
+  align-items: center;
+  justify-content: center;
+  width: 33vw;
+  height: 100%;
+}
+.nav1 {
+  margin-top: 0;
+}
+
+.nav2 {
+  width: 34vw;
+  margin-top: 4.5vh;
+}
+
+.nav3 {
+  margin-top: 5vh;
+}
+
+.nav2 i {
+  font-size: 1.5em;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav3 ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav3 ul li {
+  margin: 0 5px;
+}
+
+.nav3 ul li a {
+  color: #fff;
+  font-size: medium;
+  text-decoration: none;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CONTENIDO_SUP h1 {
+  font-size: 70px;
+  color: rgba(231, 226, 232, 0.829);
+  margin-top: 20vh;
+}
+
+.videoFondo {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.CONTENIDO_INICIO {
+  position: absolute;
+  z-index: 1;
+  color: rgba(163, 160, 160, 0.828);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.199);
+
+  flex-direction: column;
+}
+
+.CONTENIDO_SUP,
+.CONTENIDO_INF {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CONTENIDO_SUP {
+  flex-direction: column;
+}
+
+.CONTENIDO_INF {
+  flex-direction: row;
+}
+
+#cont1,
+#cont2,
+#cont3,
+#cont4 {
+  width: 18vw;
+  height: 28vh;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.645);
+  background-color: rgba(0, 0, 0, 0.478);
+  font-size: x-small;
+}
+
+.CONTENIDO_NOVEDADES {
+  margin-top: 13vh;
+  position: absolute;
+  z-index: 1;
+  color: rgba(163, 160, 160, 0.828);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url(/Recursos/IMG/tierra.webp);
+}
+
+.BUSCADOR {
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.busca {
+  width: 80vw;
+  height: 9vh;
+  margin: 5px;
+}
+
+.fa-solid.fa-magnifying-glass {
+  font-size: 1.3rem;
+  color: rgba(199, 195, 195, 0.6);
+}
+
+.busqueda {
+  width: 2rem;
+  height: 1.8rem;
+  border-radius: 5rem;
+  border-color: rgba(240, 248, 255, 0);
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.COLUMNAS {
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont4 {
+  background-color: #1616169d;
+  width: 33vw;
+  height: 40vh;
+  border-style: dotted;
+  border-color: rgba(101, 156, 14, 0.525);
+  border-left: none;
+  border-bottom: none;
+}
+
+#cont-izq {
+  border-style: dotted;
+  border-color: rgba(101, 156, 14, 0.525);
+}
+
+.entrada {
+  width: 60vw;
+  height: 7vh;
+  border-radius: 20px;
+  font-size: large;
+  font-family: "minecraftia";
+  text-align: center;
+  margin: 5px;
+}
+
+.h2Inicio {
+  color: white;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+}
+
+.pInicio {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  color: rgb(211, 212, 216);
+  font-size: small;
+}
+
+.h2Funcion {
+  color: rgb(213, 108, 171);
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+  cursor: pointer;
+}
+
+.visible {
+  display: block;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  color: rgb(211, 212, 216);
+  font-size: medium;
+}
+
+.pFuncion {
+
+  display: none;
+}
+
+.fa-solid.fa-desktop,
+.fas.fa-tablet-alt,
+.fas.fa-mobile-alt {
+  font-size: 1.8vw;
+}
+
+.CONTENIDO_COMENTARIOS {
+  margin-top: 13vh;
+  position: absolute;
+  z-index: 1;
+  color: rgba(163, 160, 160, 0.828);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/Recursos/IMG/nether.webp);
+}
+
+.comentario {
+  width: 71vw;
+  height: 13vh;
+  background: rgba(128, 128, 128, 0.566);
+  margin: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icono {
+  width: 5.5vw;
+  height: 12vh;
+}
+
+.contenido {
+  width: 100%;
+  height: 100%;
+  background: rgba(151, 133, 133, 0.48);
+  padding: 0.3rem;
+  color: white;
+}
+
+.icono img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.contenido p {
+  text-align: left;
+  margin-left: 0.5rem;
+  font-size: medium;
+}
+
+.contenido h3 {
+  margin-left: 1rem;
+  text-align: left;
+  font-size: large;
+  color: rgb(43, 149, 36);
+}
+
+.mapaGoogle {
+  width: 100vw;
+  height: 60vh;
+}
+
+.mapaGoogle {
+  padding-top: 5vh;
+}
+
+.columnaDatos {
+  width: 100vw;
+}
+
+.columnaDatos,
+.datosContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-image: url(/Recursos/IMG/piedra.png);
+}
+
+#formulario2 {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  margin: 1vh;
+  height: 5vh;
+}
+
+.inputInf {
+  width: 24.2vw;
+}
+
+.piedra {
+  width: 8vw;
+  height: 4.5vh;
+background-color: darkorchid;
+  background-repeat: no-repeat;
+  background-size: cover; /* Para ajustar la imagen al tamaño del botón */
+  border-style: none;
+}
+
+.piedra:hover {
+  background-color: rgb(166, 101, 198);
+}
